@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base1.css">
+    <link rel="stylesheet" href="css/sitenav1.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <!--icon图标-->
+    <link rel="shortcut icon" href="./bitbug_favicon.ico" />
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>商城导航</title>
+    <script type="text/html" id="nav">
+        {{each result as value}}
+        <li><a href="{{value.navHref}}"><img src="{{value.navImg}}" alt=""/>{{value.navTitle}}</a></li>
+        {{/each}}
+    </script>
+
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <a href="index.html" class="mm_logo">
+        <span class="iconfont icon-jiantou-copy"></span>
+    </a>
+    <h3>商城导航</h3>
+    <a href="#" class="mm_download">
+        <img src="images/header_app.png" alt=""/>
+    </a>
+</header>
+<!--产品块-->
+<section id="container">
+    <div class="content">
+        <ul>
+
+        </ul>
+    </div>
+    <div class="top">
+        <ul>
+            <li><a href="index.html">首页 > </a></li>
+            <li><a href="sitenav.html">商城导航 > </a></li>
+        </ul>
+    </div>
+</section>
+<!--底部-->
+<section id="footer">
+    <ul class="top row">
+        <li class="col-xs-4"><a href="#">登录</a></li>
+        <li class="col-xs-4"><a href="#">注册</a></li>
+        <li class="col-xs-4"><a href="#"><span class="iconfont icon-jiantou-copy-copy-copy"></span>返回顶部</a></li>
+    </ul>
+    <div class="bottom">
+        <p><a href="#">手机app下载</a>&nbsp;<a href="#">慢慢买手机端</a>&nbsp;--掌上比价平台</p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</section>
+<!--js文件 注意引入的依赖关系-->
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script rel="stylesheet" src="./lib/template.js"></script>
+<script src="./js/sitenav.js"></script>
+</body>
+</html>

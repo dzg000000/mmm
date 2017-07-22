@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base1.css">
+    <link rel="stylesheet" href="css/productlist1.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>慢慢买</title>
+    <script type="text/html" id="category">
+        {{each result as value}}
+        <a href="#">{{value.category}} > </a>
+        {{/each}}
+    </script>
+    <script type="text/html" id="categoryPage">
+        {{each result as value}}
+        <li><a href="bijia.html?productId={{value.productId}}">
+            <div class="left">
+               {{#value.productImg}}
+            </div>
+            <div class="right">
+                <div class="title">{{value.productName}}</div>
+                <div class="price">{{value.productPrice}}</div>
+                <div class="other">
+                    <span>{{value.productQuote}}</span>
+                    <span>{{value.productCom}}</span>
+                </div>
+            </div>
+        </a></li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="pageidTitle">
+        <option></option>
+</script>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <a href="index.html" class="mm_logo">
+        <img src="images/header_logo.png" alt=""/>
+    </a>
+    <a href="#" class="mm_download">
+        <img src="images/header_app.png" alt=""/>
+    </a>
+</header>
+<!--搜索-->
+<section id="search">
+    <form action="#">
+        <input type="text" class="txt" placeholder="请输入你想比价的商品"/>
+        <input type="button" value="搜索" class="btn"/>
+    </form>
+</section>
+<!--菜单-->
+<div id="container">
+    <div class="top">
+        <ul>
+            <li><a href="index.html">首页 > </a> </li>
+            <li><a href="category.html">全部分类 > </a></li>
+            <li></li>
+
+        </ul>
+        <input type="button" class="btn" value="筛选"/>
+    </div>
+    <div class="center">
+        <ul>
+            <!--<li><a href="#">
+                <div class="left">
+                    <img src="#" alt=""/>
+                </div>
+                <div class="right">
+                    <div class="title">和覅少年覅是vaopwegoerjigervioerfs佛挡杀佛符合公开挂牌奇偶发士大夫</div>
+                    <div class="price">￥54334</div>
+                    <div class="other">
+                        <span>7商城报价</span>
+                        <span>有123评论</span>
+                    </div>
+                </div>
+            </a></li>-->
+        </ul>
+    </div>
+    <div class="bottom">
+        <div class="prev">上一页</div>
+        <select name="" id="">
+
+        </select>
+        <div class="next">下一页</div>
+    </div>
+</div>
+<!--底部-->
+<section id="footer">
+    <ul class="top row">
+        <li class="col-xs-4"><a href="#">登录</a></li>
+        <li class="col-xs-4"><a href="#">注册</a></li>
+        <li class="col-xs-4"><a href="#"><span class="iconfont icon-jiantou-copy-copy-copy"></span>返回顶部</a></li>
+    </ul>
+    <div class="bottom">
+        <p><a href="#">手机app下载</a>&nbsp;<a href="#">慢慢买手机端</a>&nbsp;--掌上比价平台</p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</section>
+
+
+
+
+
+<!--js文件 注意引入的依赖关系-->
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script rel="stylesheet" src="./lib/template.js"></script>
+<script src="./js/producttlist.js"></script>
+
+</body>
+</html>

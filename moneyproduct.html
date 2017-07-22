@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base1.css">
+    <link rel="stylesheet" href="css/moneyproduct1.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <!--icon图标-->
+    <link rel="shortcut icon" href="./bitbug_favicon.ico" />
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>省钱控</title>
+    <script type="text/html" id="categoryPage">
+        {{each result as value}}
+        <h4>{{value.productName}}</h4>
+        <div class="price">{{value.productPinkage}}{{value.productPrice}}</div>
+        <div class="new"><span>{{value.productFrom}}</span><span>{{value.productTime}}</span><span>{{value.productTips}}</span></div>
+        <div class="info">
+                <div class="pic">
+                    {{#value.productImg2}}
+                    {{#value.productImg}}
+                </div>
+                <div class="content">
+                    <p>{{value.productInfo}}</p>
+                    <br/>
+                    <br/>
+                    <p>{{value.productInfo2}}</p>
+                </div>
+                <div class="picBig">
+                    {{#value.productImgSm}}
+                </div>
+                <div id="adress">
+                    {{#value.productCity}}
+                </div>
+                <div class="go"><a href="#"><span style="color: red">购物车</span>前往购买</a></div>
+                <div class="erWei">
+                    <img src="images/mmbweixin2.png" alt=""/>
+                </div>
+                <div id="boring">
+                    {{#value.productComment}}
+                </div>
+
+        </div>
+        {{/each}}
+    </script>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <h3>国内折扣</h3>
+    <a href="#" class="mm_download">
+        <img src="images/header_app.png" alt=""/>
+    </a>
+</header>
+<!--产品信息-->
+<div id="container">
+
+</div>
+<!--底部-->
+<section id="footer">
+    <ul class="top row">
+        <li class="col-xs-4"><a href="#">登录</a></li>
+        <li class="col-xs-4"><a href="#">注册</a></li>
+        <li class="col-xs-4"><a href="#"><span class="iconfont icon-jiantou-copy-copy-copy"></span>返回顶部</a></li>
+    </ul>
+    <div class="bottom">
+        <p><a href="#">手机app下载</a>&nbsp;<a href="#">慢慢买手机端</a>&nbsp;--掌上比价平台</p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</section>
+
+
+
+
+
+<!--js文件 注意引入的依赖关系-->
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script rel="stylesheet" src="./lib/template.js"></script>
+<script src="./js/moneyproduct.js"></script>
+
+</body>
+</html>

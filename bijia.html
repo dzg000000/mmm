@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base1.css">
+    <link rel="stylesheet" href="css/bijia1.css">
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+    <title>慢慢买--产品介绍</title>
+    <script type="text/html" id="category">
+        {{each result as value}}
+        <a href="#">{{value.category}} > </a>
+        {{/each}}
+    </script>
+    <script type="text/html" id="productNew">
+        {{each result as value}}
+            <div class="picBox">
+                {{#value.productImg}}
+                <span>收藏</span>
+            </div>
+
+            <p>{{value.productName}}</p>
+            <div class="other">
+                <span>当前最低：￥2345.00</span>
+                <span>优先评论：<i>2341条</i></span>
+            </div>
+        {{/each}}
+    </script>
+    <script type="text/html" id="talk">
+        {{each result as value}}
+        <li class = "talk_list">
+            <p><span>{{value.comName}}</span><span>{{value.comTime}}</span></p>
+            <p><span>★★★★</span><span>{{value.comFrom}}</span></p>
+            <p>{{value.comContent}}</p>
+            <a href="#">回复</a>
+        </li>
+        {{/each}}
+    </script>
+</head>
+
+<body>
+<!--头部-->
+<header id="header">
+    <a href="index.html" class="mm_logo">
+        <img src="images/header_logo.png" alt=""/>
+    </a>
+    <a href="#" class="mm_download">
+        <img src="images/header_app.png" alt=""/>
+    </a>
+</header>
+<!--搜索-->
+<section id="search">
+    <form action="#">
+        <input type="text" class="txt" placeholder="请输入你想比价的商品"/>
+        <input type="button" value="搜索" class="btn"/>
+    </form>
+</section>
+<!--产品详情-->
+<div id="productInfo">
+    <div class="top">
+        <ul>
+            <li><a href="index.html">首页 > </a> </li>
+            <li></li>
+            <li></li>
+        </ul>
+        <input type="button" class="btn" value="筛选"/>
+    </div>
+    <div class="productNew">
+       <!-- <div class="picBox">
+            <img src="" alt=""/>
+            <span>收藏</span>
+        </div>
+
+        <p>传智播客欢迎你，来到这里你买不了吃亏，买不了上当，全部九块九。</p>
+        <div class="other">
+            <span>当前最低：￥2345.00</span>
+            <span>优先评论：<i>2341条</i></span>
+        </div>-->
+
+    </div>
+    <ul class="row">
+        <li class="col-xs-4"><a href="#">比价购买</a></li>
+        <li class="col-xs-4"><a href="#">产品参数</a></li>
+        <li class="col-xs-4"><a href="#">优选评价</a></li>
+    </ul>
+    <div class="talk">
+        <div class="top">优先网友评价</div>
+        <ul class="content">
+        </ul>
+    </div>
+    <div class="more">
+        <a href="#">查看更多评论</a>
+    </div>
+</div>
+<!--底部-->
+<section id="footer">
+    <ul class="top row">
+    <li class="col-xs-4"><a href="#">登录</a></li>
+    <li class="col-xs-4"><a href="#">注册</a></li>
+    <li class="col-xs-4"><a href="#"><span class="iconfont icon-jiantou-copy-copy-copy"></span>返回顶部</a></li>
+</ul>
+    <div class="bottom">
+        <p><a href="#">手机app下载</a>&nbsp;<a href="#">慢慢买手机端</a>&nbsp;--掌上比价平台</p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</section>
+
+
+
+
+
+<!--js文件 注意引入的依赖关系-->
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script rel="stylesheet" src="./lib/template.js"></script>
+<script src="./js/bijia.js"></script>
+
+
+</body>
+</html>

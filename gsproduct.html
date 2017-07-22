@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base1.css">
+    <link rel="stylesheet" href="css/gsproduct1.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <!--icon图标-->
+    <link rel="shortcut icon" href="./bitbug_favicon.ico" />
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>凑单品</title>
+    <script type="text/html" id="shop">
+    {{each result as value}}
+    <li id="{{value.shopId}}"><div class="text">{{value.shopName}}</div><span class="iconfont icon-duihao"></span></li>
+        {{/each}}
+</script>
+    <script type="text/html" id="area">
+        {{each result as value}}
+        <li id="{{value.areaId}}"><div class="text">{{value.areaName}}</div><span class="iconfont icon-duihao"></span></li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="product">
+    {{each result as value}}
+    <li><a href="#">
+        <div class="pic"><img src="{{value.productImg}}" alt=""/></div>
+        <div class="title">{{value.productName}}</div>
+        <div class="price">{{value.productPrice}}</div>
+        <span class="go">去凑单</span>
+    </a></li>
+        {{/each}}
+</script>
+
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <a href="index.html" class="mm_logo">
+        <span class="iconfont icon-jiantou-copy"></span>
+    </a>
+    <h3>凑单品</h3>
+    <a href="#" class="mm_download">
+        <img src="images/header_app.png" alt=""/>
+    </a>
+</header>
+<!--产品块-->
+<section id="container">
+    <div class="top">
+        <div class="dropdown one">
+            <button id="dLabel1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+
+            </ul>
+        </div>
+        <div class="dropdown two">
+            <button id="dLabel2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+
+        </ul>
+        </div>
+        <div class="dropdown three">
+             <button id="dLabel3" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 价钱
+                 <span class="caret"></span>
+             </button>
+             <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li>1-3 <span></span></li>
+                <li>3-6 <span></span></li>
+                <li>6-9 <span></span></li>
+            </ul>
+            </div>
+        <div class="search">
+
+        </div>
+    </div>
+    <ul class="content">
+
+    </ul>
+
+</section>
+<!--底部-->
+<section id="footer">
+    <ul class="top row">
+        <li class="col-xs-4"><a href="#">登录</a></li>
+        <li class="col-xs-4"><a href="#">注册</a></li>
+        <li class="col-xs-4"><a href="#"><span class="iconfont icon-jiantou-copy-copy-copy"></span>返回顶部</a></li>
+    </ul>
+    <div class="bottom">
+        <p><a href="#">手机app下载</a>&nbsp;<a href="#">慢慢买手机端</a>&nbsp;--掌上比价平台</p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</section>
+<!--js文件 注意引入的依赖关系-->
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script rel="stylesheet" src="./lib/template.js"></script>
+<script src="./js/gsproduct.js"></script>
+
+</body>
+</html>
