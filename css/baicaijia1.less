@@ -1,0 +1,278 @@
+
+body{
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  #header{
+    width: 100%;
+    height: 50px;
+    background-color: #ff841d;
+    padding: 0 10px;
+    position: relative;
+    .mm_logo{
+      height: 44px;
+      width:50px;
+      position: absolute;
+      top:3px;
+      left: 0;
+      text-align: center;
+      line-height: 44px;
+      >span{
+        font-size: 26px;
+        font-family: simsun;
+        color: white;
+      }
+    }
+    >h3{
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      line-height: 44px;
+      padding: 0 40px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
+    .mm_download{
+      height: 48px;
+      width: 48px;
+      position: absolute;
+      top: 0 ;
+      right: 0;
+      text-align: center;
+      img{
+        margin-top: 10px;
+        width: 34px;
+        height: 34px;
+        text-align: center;
+      }
+    }
+  }
+  #nav{
+    width: 100%;
+    height: 38px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    position: relative;
+    >ul{
+      position: absolute;
+      width: 800px;
+      height: 100%;
+      border-bottom: 1px solid #cccccc;
+      >li{
+        height: 38px;
+        float: left;
+        >a{
+          display: block;
+          height: 100%;
+          padding: 0 10px;
+          line-height: 38px;
+          color: #666666;
+        }
+        >.active{
+          border-bottom: 2px solid red;
+          color: red;
+        }
+      }
+     /* >li:first-of-type{
+        >.active{
+          border-bottom: 2px solid red;
+          color: red;
+        }
+
+      }*/
+    }
+  }
+  #recommen{
+    width: 100%;
+    >ul{
+      width: 100%;
+      >li{
+        width: 100%;
+        margin: 6px 0;
+        height: 150px;
+
+        position: relative;
+        >a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          padding: 10px 6px;
+          >.pic{
+            float: left;
+            width: 135px;
+            height: 130px;
+            >img{
+              width: 130px;
+              height: 130px;
+            }
+          }
+        }
+        >.text{
+          width: 100%;
+          padding-left: 140px;
+          padding-top: 10px;
+          >.title{
+            font-size: 18px;
+            line-height: 18px;
+            max-height: 36px;
+            width: 100%;
+          }
+          >.price{
+            width: 100%;
+            height: 24px;
+            margin-top: 6px;
+            font-size: 24px;
+            line-height: 24px;
+            color: red;
+            >i{
+              font-style: normal;
+              margin-right: 6px;
+              font-size: 18px;
+            }
+            >em{
+              font-style: normal;
+              margin-right: 6px;
+              font-size: 14px;
+            }
+            >del{
+              color: #cccccc;
+              font-size: 14px;
+              margin-left: 10px;
+            }
+          }
+          >.jin{
+            width: 100%;
+            max-height: 28px;
+            min-height: 14px;
+            margin-top: 10px;
+            >.bar{
+              width: 100%;
+              height: 100%;
+              >i{
+                float: left;
+                width: 60%;
+                height: 100%;
+                position: relative;
+                font-style: normal;
+                >span{
+                  float: left;
+                  display: block;
+                  width: 100%;
+                  height: 14px;
+                  border-radius: 7px;
+                  border: 1px solid red;
+                  background-color: lightcoral;
+                  color: white;
+                  text-align: center;
+                  font-size: 14px;
+                  line-height: 14px;
+                }
+                >em{
+                  position: absolute;
+                  float: left;
+                  height: 14px;
+                  border-radius: 7px;
+                  background-color: red;
+                  z-index: 100;
+                }
+              }
+              >b{
+                display: block;
+                height: 100%;
+                font-size: 14px;
+                color: red;
+                margin-left: 65%;
+                font-weight: 400;
+                line-height: 14px;
+              }
+            }
+          }
+          >.bottom{
+            width: 100%;
+            height: 30px;
+            margin-top: 10px;
+            line-height: 30px;
+
+            >a{
+              display: inline-block;
+              width: 50%;
+              max-width: 150px;
+              height: 30px;
+              font-size: 18px;
+              border: 1px dashed red;
+              color: red;
+              text-align: center;
+            }
+            >span{
+              display: block;
+              float: right;
+              width: 50%;
+              max-width: 80px;
+              margin-right: 20px;
+              >a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: #fe1562;
+                color: white;
+                text-align: center;
+                border-radius: 6px;
+              }
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+  #footer{
+    >.top{
+      width: 100%;
+      height: 34px;
+      border-top: 1px solid #b0b0b0;
+      border-bottom: 1px solid #b0b0b0;
+      margin: 0;
+      justify-content: space-around;
+      >li{
+        height: 100%;
+        border-right: 1px solid #ccc;
+        text-align: center;
+        line-height: 34px;
+        background-color: #e4e3e3;
+        >a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          >img{
+            width: 15px;
+            height: 15px;
+            margin-top: -4px;
+          }
+        }
+      }
+      >li:last-of-type{
+        border-right: 0;
+      }
+    }
+    >.bottom{
+      text-align: center;
+      background-color: #e4e3e3;
+      padding-top: 10px;
+      font-size: 12px;
+      p:first-of-type{
+        margin-bottom: 0;
+        >a:first-of-type{
+          color: red;
+        }
+      }
+      p:last-of-type{
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

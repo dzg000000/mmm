@@ -1,0 +1,120 @@
+body {
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+body #header {
+  width: 100%;
+  height: 50px;
+  background-color: #ff283a;
+  padding: 0 10px;
+  position: relative;
+}
+body #header .mm_logo {
+  height: 44px;
+  width: 50px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  text-align: center;
+  line-height: 44px;
+}
+body #header .mm_logo > span {
+  font-size: 26px;
+  font-family: simsun;
+  color: white;
+}
+body #header > h3 {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 44px;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+body #header .mm_download {
+  height: 48px;
+  width: 48px;
+  position: absolute;
+  top: 0 ;
+  right: 0;
+  text-align: center;
+}
+body #header .mm_download img {
+  margin-top: 10px;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+}
+body #container {
+  width: 100%;
+}
+body #container > .pic {
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+}
+body #container > .pic > li {
+  height: 100px;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+body #container > .pic > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #cccccc;
+  text-align: center;
+}
+body #container > .pic > li > a > img {
+  margin-top: 15px;
+  width: 70px;
+  height: 70px;
+}
+body #footer > .top {
+  width: 100%;
+  height: 34px;
+  border-top: 1px solid #b0b0b0;
+  border-bottom: 1px solid #b0b0b0;
+  margin: 0;
+  justify-content: space-around;
+}
+body #footer > .top > li {
+  height: 100%;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  line-height: 34px;
+  background-color: #e4e3e3;
+}
+body #footer > .top > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body #footer > .top > li > a > img {
+  width: 15px;
+  height: 15px;
+  margin-top: -4px;
+}
+body #footer > .top > li:last-of-type {
+  border-right: 0;
+}
+body #footer > .bottom {
+  text-align: center;
+  background-color: #e4e3e3;
+  padding-top: 10px;
+  font-size: 12px;
+}
+body #footer > .bottom p:first-of-type {
+  margin-bottom: 0;
+}
+body #footer > .bottom p:first-of-type > a:first-of-type {
+  color: red;
+}
+body #footer > .bottom p:last-of-type {
+  padding-bottom: 10px;
+}

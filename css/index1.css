@@ -1,0 +1,253 @@
+body {
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+body #header {
+  width: 100%;
+  height: 50px;
+  background-color: #ff841d;
+}
+body #header .mm_logo {
+  height: 25px;
+  width: 186px;
+  float: left;
+  margin-left: 16px;
+  margin-top: 12px;
+}
+body #header .mm_logo img {
+  width: 100%;
+  height: 100%;
+}
+body #header .mm_download {
+  height: 48px;
+  width: 48px;
+  float: right;
+  text-align: center;
+}
+body #header .mm_download img {
+  margin-top: 10px;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+}
+body #search {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #cccccc;
+  overflow: hidden;
+}
+body #search form {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  position: relative;
+  padding-left: 16px;
+  font-size: 18px;
+}
+body #search form .txt {
+  width: 90%;
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 5%;
+  outline: none;
+  border: 0;
+  background-color: #f1f1f1;
+}
+body #search form .btn {
+  width: 60px;
+  height: 30px;
+  line-height: 15px;
+  border-radius: 15px;
+  background-color: #ff841d;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+}
+body #menu {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+body #menu > #menubox {
+  padding-top: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+body #menu > #menubox > a {
+  float: left;
+  width: 25%;
+  height: 70px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+body #menu > #menubox > a > .pic {
+  width: 100%;
+  height: 50px;
+}
+body #menu > #menubox > a > .pic > img {
+  width: 50px;
+  height: 50px;
+}
+body #menu > #menubox > a > .name {
+  color: #666;
+  margin-top: 6px;
+  font-size: 12px;
+}
+body #recommen {
+  width: 100%;
+}
+body #recommen > .top {
+  display: block;
+  width: 100%;
+  height: 36px;
+  position: relative;
+  background-color: #ff9000;
+}
+body #recommen > .top span {
+  height: 36px;
+  line-height: 36px;
+  margin-left: 12px;
+  font-size: 22px;
+  font-family: "΢���ź�";
+  color: #ffffff;
+}
+body #recommen > .top img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+body #recommen > #product {
+  width: 100%;
+}
+body #recommen > #product > a {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  overflow: hidden;
+  position: relative;
+}
+body #recommen > #product > a .left {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+body #recommen > #product > a .left > img {
+  width: 100px;
+  height: 100px;
+}
+body #recommen > #product > a .right {
+  float: left;
+  width: 100%;
+  padding-left: 120px;
+}
+body #recommen > #product > a .right > .top {
+  font-size: 16px;
+}
+body #recommen > #product > a .right > .top > .red {
+  color: red;
+}
+body #recommen > #product > a .right > .bottom {
+  margin-top: 48px;
+  font-size: 12px;
+  color: #a1a1a1;
+  vertical-align: middle;
+}
+body #recommen > #product > a .right > .bottom > .icon {
+  float: right;
+}
+body #recommen > .bottom {
+  width: 100%;
+  height: 44px;
+  background-color: #e4e3e3;
+  padding: 6px;
+}
+body #recommen > .bottom > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  text-align: center;
+  font-size: 13px;
+  line-height: 30px;
+  font-family: "Simsun";
+  border-radius: 6px;
+  color: #5a5a5a;
+}
+body #footer > .adbox {
+  width: 100%;
+  height: 56px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #e4e3e3;
+}
+body #footer > .adbox > .ad {
+  width: 100%;
+  height: 36px;
+  padding: 4px;
+  background-color: #ff9000;
+}
+body #footer > .adbox > .ad > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font: 22px/28px "΢���ź�";
+  color: white;
+}
+body #footer > .adbox > .ad > a > img {
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right: 4px;
+  margin-top: 4px;
+}
+body #footer > .top {
+  width: 100%;
+  height: 34px;
+  border-top: 1px solid #b0b0b0;
+  border-bottom: 1px solid #b0b0b0;
+  margin: 0;
+  justify-content: space-around;
+}
+body #footer > .top > li {
+  height: 100%;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  line-height: 34px;
+  background-color: #e4e3e3;
+}
+body #footer > .top > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body #footer > .top > li > a > img {
+  width: 15px;
+  height: 15px;
+  margin-top: -4px;
+}
+body #footer > .top > li:last-of-type {
+  border-right: 0;
+}
+body #footer > .bottom {
+  text-align: center;
+  background-color: #e4e3e3;
+  padding-top: 10px;
+  font-size: 12px;
+}
+body #footer > .bottom p:first-of-type {
+  margin-bottom: 0;
+}
+body #footer > .bottom p:first-of-type > a:first-of-type {
+  color: red;
+}
+body #footer > .bottom p:last-of-type {
+  padding-bottom: 10px;
+}

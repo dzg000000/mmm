@@ -1,0 +1,90 @@
+/*图片后期应压缩处理*/
+.index-slide {
+	position:relative;
+	width:320px;!important;
+	height:130px;margin:0 auto;
+	overflow:hidden;
+}
+.index-slide img {
+	width:320px;
+	height:130px;
+}
+.index-slide .index-slide-box {
+	position:relative;
+	width:320px;
+	height:130px;
+	overflow:hidden;
+	left:0;
+}
+.index-slide .index-slide-box ul {
+	position:absolute;
+	width:999em;
+	left:0;
+}
+.index-slide .index-slide-box li {
+	position:relative;
+	float:left;
+	left:0;
+	width:320px;
+}
+.index-slide .index-slide-trigger {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:4px;
+}
+.index-slide .index-slide-trigger li {
+	float:left;
+	width:80px;
+	height:4px;
+	background:#fff;
+	opacity:.3;
+}
+.index-slide .index-slide-trigger li.cur {
+	background:#f60;
+	width:80px;
+	opacity:1;
+}
+.jxhd{
+	height:35px;
+	background-color:#ff9000;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffaf47),to(#ff9000));
+	background: -moz-linear-gradient(top, #ffaf47, #ff9000);
+	background: -o-linear-gradient(top,#ffaf47, #ff9000);
+	border-bottom: solid 1px #ffc881;
+	line-height:35px;
+	overflow:hidden;
+	color:#fff;
+	padding-left:14px;
+	font-weight:bold;
+	font-size:18px;
+	clear:both;
+}
+.jxhd span{ float:left;}
+.jxhd a{ float:right; margin-right:14px;}
+.jxhdc{
+ padding-bottom:10px; float:left; width:100%;}
+.jxhdbox{ background:#FFF; border:1px solid #bfbfbf; padding:5px;float:left; font-size:13px; /*max-width:138px;*/ width:43%; overflow:hidden; line-height:18px; margin-left:7px; margin-top:8px; display:block;}
+.jxhdt{ color:#888;}
+.jxhdt span{background:#91cf20; color:#FFF; float:right;display:block; width:65px; text-align:center; height:20px; line-height:20px; overflow:hidden; margin-right:-5px;opacity:.8;}
+.zxcx{ height:35px;
+background-color:#ededed;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ededed));
+	background: -moz-linear-gradient(top, #ffffff, #ededed);
+	background: -o-linear-gradient(top,#ffffff, #ededed);
+	border-top: solid 1px #bfbfbf;
+	border-bottom: solid 1px #bfbfbf;
+	margin-top:-1px;
+	font-size:14px; line-height:35px; overflow:hidden;
+	padding:0 10px;
+}
+.zxcx div{ background:url(http://pnginx.manmanbuy.com:8080/wap/images/arrow_r.png) right center no-repeat;}
+.zxcx span{ color:#ff5400;}
+.jxhdtd{ padding:8px 0; height:35px; vertical-align:top;}
+.class{ padding:0 6px; margin-top:10px;}
+.all{ background:#ff9000 url(http://pnginx.manmanbuy.com:8080/wap/images/fl.gif) center 45px no-repeat;box-shadow:0 0 2px #cbcbcb; float:left; width:25%; height:130px; text-align:center; color:#fff; display:block; overflow:hidden;}
+.classm{ float:left; font-size:14px;width:75%;}
+.classm a{ padding:10px 15px; background:#f4f4f4; /*box-shadow:0 0 2px #cbcbcb;*/ border:1px solid #bfbfbf; float:left; margin:0 0 6px 6px;}
+.topt{ font-size:15px; text-align:center; font-weight:bold; line-height:32px;}
+.topt span{color:#ff5400;}

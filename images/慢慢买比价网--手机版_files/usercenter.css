@@ -1,0 +1,205 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*用户中心首页*/
+.usercenter{ max-width: 960px; margin: 0px auto;}
+.usercenter .user{ float:none; margin:0px; padding:10px;}
+.usercenter .user:after{ clear:both;content: "";display: block;}
+.usercenter .user .avatar{ float:left; width:110px; height:110px; overflow:hidden;}
+.usercenter .user .info{ float:left; margin-left:12px;} 
+.usercenter .user .info .author{ font-weight:bold; margin-bottom:10px; font-size:16px;}
+.usercenter .user .info .detail{ margin-top:24px;}
+.usercenter .user .info .detail p{ margin:0px; padding:0px; line-height:22px;}
+.usercenter .user .info .detail p em{ font-style:normal; color:#f82222; margin-left:4px;}
+.usercenter .listblock { margin-top: 18px; padding-bottom: 18px;}
+.usercenter .listblock ul { background-color: #FFFFFF;}
+.usercenter .listblock ul li { position: relative; padding: 8px 15px; color: #6a6a6c; font-size: 15px; min-height: 44px; line-height: 28px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; color: #666;}
+.usercenter .listblock ul li:after { background: url("data:image/svg+xml;charset=utf-8,<svg viewBox='0 0 60 120' xmlns='http://www.w3.org/2000/svg'><path d='m60 61.5-38.25 38.25-9.75-9.75 29.25-28.5-29.25-28.5 9.75-9.75z' fill='%2388837d'/></svg>") right center no-repeat; background-size: 10px 20px; content: ""; display: block; width: 9px; height: 16px; position: absolute; right: 15px; top: 50%; margin-top: -7px; }
+.usercenter .listblock ul li span{ margin-left:8px;}
+.usercenter .listblock ul li span em{ color:#f82222; font-style:normal;}
+.usercenter .listblock ul li a{  display:block;}
+.usercenter .logout-btn{ padding:10px;}
+.usercenter .logout-btn a{ display:block; background-color:#f62221; text-align:center; color:#FFFFFF; height:40px; line-height:40px; border-radius:4px;}
+
+/*微信提醒*/
+.wechat-alert{}
+.wechat-alert .hd{ font-size:14px; padding:15px;}
+.wechat-alert .bd{}
+.wechat-alert ul li{ position:relative; padding:15px 0px; font-size:15px; height:40px; overflow:hidden; display:table; width:100%;}
+.wechat-alert ul li p{vertical-align:middle;  display:table-cell; padding:0px 15px;}
+.wechat-alert ul li span{ color:#999999; display:block; margin-top:4px;}
+.wechat-alert ul li input.ioschk{ position:absolute; right:15px; top:16px;}
+
+/*我的积分、我的收藏_即将废除、我的订单*/
+.user-fav{background-color: #ffffff;}
+.user-tabs .hd{ height:45px;overflow:hidden; background-color: #ffffff;}
+.user-tabs .hd:after{ content:''; display:block; clear:both;}
+.user-tabs .hd ul li{ float:left; width:33.33%; text-align:center;}
+.user-tabs .hd ul li a{ display:block; line-height:43px; border-bottom:2px solid #FFFFFF; color:#999999;}
+.user-tabs .hd ul li.on a{ border-bottom:2px solid #f0580d; color:#f0580d;}
+.user-fav .bd ul li{ padding:15px 10px; position:relative;}
+.user-fav .bd ul li:after{ content:''; display:block; clear:both;}
+.user-fav .bd .item{ float:left; overflow:hidden;}
+.user-fav .bd .item a{ display:block;}
+.user-fav .bd .item .pic{ width: 60px; height: 60px; overflow: hidden; margin-right: 10px; float: left; margin-top:4px;}
+.user-fav .bd .item .pic img{ max-width:60px;}
+.user-fav .bd .item .info{ width: 240px;}
+.user-fav .bd .item .info .tit{ height:34px; line-height:17px; overflow:hidden; word-break:break-all;}
+.user-fav .bd .item .info .price{ color:#c4010f; font-size:15px; margin:0px auto;}
+.user-fav .bd .item .info .time{ color:#999999; font-size:10px; white-space: nowrap;}
+.user-fav .bd .other{ text-align:right; width:75px; overflow:hidden; position:absolute; right:10px; top:10px;}
+.user-fav .bd .other .del{ text-align:right;}
+.user-fav .bd .other .del a{display: inline-block; width: 46px; height:26px;}
+.user-fav .bd .other .del a:before{ font-family: "iconfont" !important; content: '\e61c'; color: #000000; font-size: 18px;}
+.user-fav .bd .other .wxalert{ text-align:right;}
+.user-fav .bd .other .wxalert p{ color:#999999; font-size: 10px; margin:5px auto;}
+.user-jifen .info{ font-size:14px; padding:15px; background-color: #ffffff;}
+.user-jifen .info em{ font-size:18px; color:#fd0100;}
+.user-jifen .table{background-color: #ffffff;}
+.user-jifen .table ul li{ padding:15px; font-size:12px; text-align:left;}
+.user-jifen .table span.mscore{ display:inline-block; width:16%; overflow:hidden;}
+.user-jifen .table span.mscore i{ font-style:normal; color:#fd0100;}
+.user-jifen .table span.from{ display:inline-block; width:58%; vertical-align:top; word-break:break-all; overflow:hidden;}
+.user-jifen .table span.time{ color:#999999;display:inline-block;width:22%; overflow:hidden;}
+.user-jifen .note{ text-align:right; color:#999999; font-size:12px;}
+.user-dingdan{}
+.user-dingdan .info{ font-size:14px; padding:15px;}
+.user-dingdan .info em{ font-size:18px; color:#fd0100;}
+.user-dingdan .tableth{background:#f8f8f8; padding:15px; color:#999999;}
+.user-dingdan .table ul li{ padding:15px; font-size:12px; text-align:left;}
+.user-dingdan .table ul li:nth-child(even){ background:#f8f8f8;}
+.user-dingdan .table ul li:after,.user-dingdan .tableth:after{ content:''; display:block; clear:both;}
+.user-dingdan .table span,.user-dingdan .tableth span{ overflow:hidden; vertical-align:middle; float:left;}
+.user-dingdan span.mall{  width:20%;}
+.user-dingdan span.num{width:24%;}
+.user-dingdan span.price{ width:20%;}
+.user-dingdan span.fanli{width:20%;}
+.user-dingdan span.time{width:16%;color:#999999;}
+.user-dingdan .note{ text-align:right; color:#999999; font-size:12px;}
+
+/*海淘订单*/
+.user-haitao{ font-size:12px;}
+.user-haitao .hd{ background-color:#ffffff;}
+.user-haitao .hd ul li{float:left; width:20%; text-align:center; height:36px;}
+.user-haitao .hd ul li a{ display:inline-block; line-height:33px; border-bottom:2px solid #FFFFFF; color:#666666; padding:0px 8px;}
+.user-haitao .hd ul li.on a{ border-bottom:2px solid #f0580d; color:#f0580d;}
+.user-haitao .bd{}
+.user-haitao .bd ul li{ background-color:#ffffff; margin-top:10px; position:relative; overflow:hidden;}
+.user-haitao .bd .i{ padding:10px 10px;}
+.user-haitao .bd .i .n{ float:left; color:#666666;}
+.user-haitao .bd .i .s{ color:#ff6600; float:right;}
+.user-haitao .bd .p{background-color:#f6f6f6; padding:10px 70px 10px 10px; width:auto;}
+.user-haitao .bd .p .g{ float:left; width:85px;}
+.user-haitao .bd .p .g img{ width:80px; height:80px;}
+.user-haitao .bd .p .h{ word-break:break-all;}
+.user-haitao .bd .p .h a{color:#333333;}
+.user-haitao .bd .m{ position:absolute; top:50px; right:10px; text-align:right;}
+.user-haitao .bd .m p{ font-size:15px;}
+.user-haitao .bd .m em{ font-size:12px;}
+.user-haitao .bd .m p.e{ font-size:12px !important; color:#666666;}
+.user-haitao .bd .o{ background-color:#f6f6f6; padding:10px 0px; margin-top:6px; color:#666666;}
+.user-haitao .bd .o dl{ height:24px; line-height:24px; padding:0px 10px;}
+.user-haitao .bd .o dl dt{ float:left;}
+.user-haitao .bd .o dl dd{ float:right;}
+.user-haitao .bd .t{ text-align:right; padding:10px;}
+.user-haitao .bd .t span{ font-size:15px;}
+.user-haitao .bd .t span em{ font-size:12px; font-style:normal; margin-right:4px;}
+.user-haitao .bd .b{ padding:10px; height:24px;}
+.user-haitao .bd .b a{ border:1px solid #dedede; border-radius:3px; text-align:center; float:right; padding:3px 10px; font-size:14px;}
+
+/*物流信息*/
+.user-logistics{ font-size:12px;}
+.user-logistics .l{ padding:10px;}
+.user-logistics .l ul{ border:1px solid #dedede; background-color:#ffffff; box-shadow:0px 0px 3px #dddddd; padding-left:40px; border-radius:6px;}
+.user-logistics .l ul li{ position:relative; padding:10px 10px 10px 0px; color:#999999;}
+.user-logistics .l ul li:before{ content:''; display:block; width:1px; height:100%; position:absolute; top:0px; left:-20px; background-color:#dddddd;}
+.user-logistics .l ul li:after{content: ''; border: 3px solid #f3f3f3; background-color: #d9d9d9; display: inline-block; width: 5px; height: 5px; border-radius: 5px; margin-left: -6px; margin-right: 10px; position:absolute; top:13px; left:-19px;}
+.user-logistics .l ul li:last-child{ border-bottom:none; background-image:none;}
+.user-logistics .l ul li p.n{}
+.user-logistics .l ul li p.t{ margin-top:4px; text-align:right; color:#999999;}
+.user-logistics .l ul li:first-child{ color:#ff6000;}
+.user-logistics .l ul li:first-child:after{background-color: #fe4300; border-color: #f8e9e4;}
+.user-logistics .l ul li:first-child p.t{ color:#ff6000;}
+
+/*降价提醒设置页*/
+.trend-alert{}
+.trend-alert p.n{ font-size: 12px; padding: 10px 10px 5px 10px; color: #999999;}
+.trend-alert .form ul li{ padding-left: 15px;min-height: 44px;line-height: 44px;position: relative; margin: 5px auto; box-sizing: border-box; background-color: #ffffff; font-size: 14px;}
+.trend-alert .form ul li span.t{ float: left; margin-right: 4px;}
+.trend-alert .form ul li span.v{ overflow: hidden; display: block; position: relative;}
+.trend-alert .form ul li span.v em{ position: absolute; top: 0px; left: 0px;}
+.trend-alert .form ul li span.v input{ width: 100%; height: 42px; line-height: normal; box-sizing: border-box; padding: 0px 10px; 0px 16px;}
+.trend-alert .form ul li span.price{ color: #ff841d;}
+.trend-alert .form ul li span.r{ position: absolute; top: 6px; right: 15px;}
+.trend-alert .btnarr{ padding: 0px 15px; margin-top: 30px;}
+.trend-alert .btnarr a{ text-align: center; height: 40px; line-height: 40px; color: #333333; border-radius: 4px; display: block; margin: 10px auto; width: 100%;}
+.trend-alert .btnarr a.a-smt{ color: #ffffff; background-color: #ff841d}
+.trend-alert .btnarr a.a-cancel{ background-color: #ffffff;}
+
+/*收藏_new*/
+.user-favlist{}
+.user-favlist ul li{ padding: 15px 10px; position: relative; background-color: #ffffff;}
+.user-favlist ul li a.godetail{ position: absolute; top:0px; left:0px; display: block; width: 100%; height: 100%;}
+.user-favlist ul li .pic{ float: left; width: 100px; height: 100px; text-align: center; margin-right: 10px; overflow: hidden;}
+.user-favlist ul li .pic img{ width: 100px; height:100px; border:none;}
+.user-favlist ul li .info{ overflow: hidden;}
+.user-favlist ul li .info .tit{  color: #333333; word-break: break-all; font-size: 15px; line-height: 24px; height: 48px; overflow: hidden;-webkit-line-clamp: 2; display: -webkit-box;-webkit-box-orient: vertical;}
+.user-favlist ul li .info .price{}
+.user-favlist ul li .info .price em{color: #ed0000; font-size: 12px; font-style: normal; vertical-align: middle;}
+.user-favlist ul li .info .price span{ color: #ed0000; font-size: 16px;}
+.user-favlist ul li .info .price i.iconfont{}
+.user-favlist ul li .info .mall{ color: #888; font-size: 12px; margin-top: 2px;}
+.user-favlist ul li .info .setalert{ color: #888; font-size: 12px; margin-top: 2px;}
+.user-favlist ul li .info .setalert strong{font-weight: 700; color: #333333; margin: 0px 2px;}
+.user-favlist ul li .action{}
+.user-favlist ul li .action a.a-set{ -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; display: block; width: 40px;height: 28px; line-height:28px; overflow: hidden; text-align: center; border:1px solid #333333; position: absolute; right: 10px; bottom: 15px; font-size: 12px; background-color: #ffffff;}
+
+.usercenter-page .phone-form{}
+.usercenter-page .phone-form .phone{ height: 44px; background-color: #ffffff;}
+.usercenter-page .phone-form .phone input{ height: 44px; padding: 0px 15px; line-height: normal; box-sizing: border-box;}
+.usercenter-page .phone-form .note{text-align: center; font-size: 14px; color: #252525; padding: 10px 0px;}
+.usercenter-page .phone-form .note p{}
+.usercenter-page .phone-form .note p.s{font-size: 22px; margin-top: 15px;}
+.usercenter-page .phone-form .ipt{ background-color: #ffffff; margin: 15px auto; padding: 12px 15px; position: relative;}
+.usercenter-page .phone-form .ipt .t{ font-size: 15px; color: #252525; float: left; width: 50px; overflow: hidden; line-height: 20px;}
+.usercenter-page .phone-form .ipt .i{ display: block; box-sizing: border-box;}
+.usercenter-page .phone-form .ipt .i input{ font-size: 15px; line-height: normal; color: #252525;box-sizing: border-box; padding: 0px 5px; height: 20px;}
+.usercenter-page .phone-form .ipt .d{padding: 0px 5px; position: absolute; top: 12px; right: 0px; width: 90px; text-align: center;  font-size: 15px; line-height: 20px; color: #151515;}
+.usercenter-page .phone-form .ipt .disabled{color: #999999;}
+.usercenter-page .phone-form .submit{ margin-top: 30px; padding: 0px 10px;}
+.usercenter-page .phone-form .submit button,.usercenter-page .phone-form .submit a{ border-radius: 3px; background-color: #fd8712; color: #ffffff; font-size: 15px; text-align: center; height: 40px; line-height: 40px; display: block; width: 100%;}
+.usercenter-page .phone-form .succss{ padding: 18px 10px;}
+.usercenter-page .phone-form .succss .iconfont{ font-size: 36px; color: #0aaf19; float: left; margin-right: 10px;}
+.usercenter-page .phone-form .succss .status p{font-size: 18px; color: #252525; font-weight: bold; line-height: 38px;}
+.usercenter-page .phone-form .succss .status .msg{text-align: left; margin-top: 35px; font-size: 13px; color: #666666; line-height: 20px; padding-left: 46px;}
+.usercenter-page .bindqq-form{}
+.usercenter-page .bindqq-form .input{background-color: #ffffff; height: 44px;}
+.usercenter-page .bindqq-form .input input{ padding: 0px 10px; box-sizing: border-box; font-size: 15px; height: 44px;}
+.usercenter-page .bindqq-form .submit{ margin-top: 30px; padding: 0px 10px;}
+.usercenter-page .bindqq-form .submit button,.usercenter-page .bindqq-form .submit a{ border-radius: 3px; background-color: #fd8712; color: #ffffff; font-size: 15px; text-align: center; height: 40px; line-height: 40px; display: block; width: 100%; outline: none;} 
+.usercenter-page .address-form{}
+.usercenter-page .address-form ul li{ background-color: #ffffff;min-height: 44px; padding: 0px 10px;}
+.usercenter-page .address-form .t{ width: 60px; float: left; overflow: hidden; line-height: 44px; font-size: 14px;}
+.usercenter-page .address-form label.v{ display: block; overflow: hidden;}
+.usercenter-page .address-form label.s{ display: block; overflow: hidden; line-height: 44px; text-align: right; color: #999999; font-size: 14px; box-sizing: border-box; padding-right: 15px;}
+.usercenter-page .address-form label.a{ display: block; overflow: hidden;}
+.usercenter-page .address-form label.a textarea{ width: 100%; padding: 5px 0px; line-height: 20px; font-size: 14px; outline: none;} 
+.usercenter-page .address-form label input{font-size: 14px; color: #272727; box-sizing: border-box; padding: 6px 10px; line-height: normal; height: 44px; width: 100%;}
+.usercenter-page .address-form .position{position: relative;}
+.usercenter-page .address-form .position:before{font-family: 'iconfont';content: '\e635';color: #c7c7c7;display: block; width: 16px;height: 16px;position: absolute;right: 6px;top: 50%;margin-top: -7px;}
+
+.usercenter-page .address-form .submit{ margin-top: 30px; padding: 0px 10px;}
+.usercenter-page .address-form .submit button,.usercenter-page .address-form .submit a{ border-radius: 3px; background-color: #fd8712; color: #ffffff; font-size: 15px; text-align: center; height: 40px; line-height: 40px; display: block; width: 100%; outline: none;} 
+
+.usercenter-page .address-list{}
+.usercenter-page .address-list ul li{background-color: #ffffff; padding: 10px;position: relative;}
+.usercenter-page .address-list a.go{ position: absolute; top:0px; left: 0px; display: block; width: 100%; height: 100%;}
+.usercenter-page .address-list .t{font-size: 15px; color: #252525;}
+.usercenter-page .address-list .t .n{}
+.usercenter-page .address-list .t .p{margin-left: 20px;}
+.usercenter-page .address-list .v{font-size: 12px; color: #666666;line-height: 16px; margin-top: 10px; height: 32px; overflow: hidden; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; padding-right: 44px;}
+.usercenter-page .address-list .a{ position: absolute; width: 44px; height: 60px; top: 10px; right: 0px;}
+.usercenter-page .address-list .a a{ display: block; line-height: 60px; text-align: center; height: 100%;}
+.usercenter-page .address-list .a a i.iconfont{font-size: 20px;}
+.usercenter-page .address-list ul li.on:before{font-family: 'iconfont';content: '\e610';color: #fd8712;display: block; width: 16px;height: 16px;position: absolute;right: 55px;top: 10px;}
+.usercenter-page .address-list .submit{ margin-top: 30px; padding: 0px 10px;}
+.usercenter-page .address-list .submit button,.usercenter-page .address-form .submit a{ border-radius: 3px; background-color: #fd8712; color: #ffffff; font-size: 15px; text-align: center; height: 40px; line-height: 40px; display: block; width: 100%; outline: none;} 

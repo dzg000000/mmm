@@ -1,0 +1,304 @@
+
+body{
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  #header{
+    width: 100%;
+    height: 50px;
+    background-color: #ff841d;
+    .mm_logo{
+      height: 25px;
+      width: 186px;
+      float: left;
+      margin-left: 16px;
+      margin-top: 12px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+    .mm_download{
+      height: 48px;
+      width: 48px;
+      float: right;
+      text-align: center;
+      img{
+        margin-top: 10px;
+        width: 34px;
+        height: 34px;
+        text-align: center;
+      }
+    }
+  }
+  #search{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #cccccc;
+    overflow: hidden;
+    form{
+      width: 100%;
+      height: 30px;
+      margin-top: 10px;
+      position: relative;
+      padding-left: 16px;
+      font-size: 18px;
+      .txt{
+        width: 90%;
+        height: 30px;
+        //margin-left: 10px;
+        //margin-right: 60px;
+        border-radius: 15px;
+        padding-left: 5%;
+        outline: none;
+        border: 0;
+        background-color: #f1f1f1;
+
+
+      }
+      .btn{
+        width: 60px;
+        height: 30px;
+        line-height: 15px;
+        border-radius: 15px;
+        background-color: #ff841d;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        outline: none;
+        border: none;
+        font-size: 16px;
+        color: #fff;
+
+      }
+    }
+  }
+  #productInfo{
+    width: 100%;
+    background-color: #ebebeb;
+    >.top{
+      width: 100%;
+      height: 40px;
+      background-color: #f6f5f5;
+      >ul{
+        list-style: none;
+        float: left;
+        height: 100%;
+        margin: 0;
+        padding-left: 10px;
+        >li{
+          float: left;
+          height: 40px;
+
+          >a{
+            height: 40px;
+            display: block;
+            line-height: 40px;
+
+          }
+        }
+      }
+      input{
+        float: right;
+        height: 30px;
+        margin-top: 5px;
+        margin-right: 5px;
+        box-shadow:5px 2px 6px #000;
+        outline: none;
+      }
+    }
+    >.productNew{
+       width: 100%;
+       height: 265px;
+       padding: 10px 10px 0 10px;
+       background-color: #ffffff;
+       >.picBox{
+         width: 100%;
+         height: 180px;
+         padding: 10px 0;
+         text-align: center;
+         position: relative;
+         >img{
+           width: 160px;
+           height: 160px;
+         }
+         >span{
+           position: absolute;
+           width: 40px;
+           height: 40px;
+           top: 10px;
+           right: 10px;
+           background-color: green;
+           border-radius: 20px;
+           text-align: center;
+           line-height: 40px;
+           color: white;
+         }
+       }
+       >p{
+         color: black;
+       }
+       >.other{
+         width: 100%;
+         margin-top: 10px;
+         color: #9b9b9b;
+         >span:first-of-type{
+           float: left;
+           width: 50%;
+
+         }
+         >span:nth-of-type(2){
+           float: left;
+           width: 50%;
+           >i{
+             font-style: normal;
+             color: black;
+           }
+         }
+       }
+
+   }
+    >.row{
+      width: 100%;
+      height: 34px;
+      margin: 0;
+      margin-top: 20px;
+      border-top: 1px solid #d12a2e;
+      border-bottom: 1px solid #d12a2e;
+      background-color: #ffd01f;
+      >.col-xs-4{
+        height: 34px;
+        line-height: 32px;
+        text-align: center;
+        border-right:1px solid #d12a2e;
+        >a{
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      >.col-xs-4:last-of-type{
+        border-right:0;
+      }
+    }
+    >.talk{
+      width: 100%;
+      >.top{
+        border-top:4px solid #7a7a7a;
+        height: 35px;
+        width: 100%;
+        background-color: #dbdbdb;
+        text-align: center;
+        line-height: 35px;
+        margin-top: 5px;
+
+      }
+      >.content{
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        >.talk_list{
+          width: 100%;
+          padding: 10px 10px 0 10px;
+          color: #9c9c9c;
+          background-color: #fff;
+          border-bottom: 1px solid #bcbcbc;
+          >p:first-of-type{
+            overflow: hidden;
+            span:first-of-type{
+              float: left;
+              font-size: 14px;
+            }
+            span:nth-of-type(2){
+              float: right;
+              font-size: 12px;
+            }
+          }
+          >p:nth-of-type(2){
+            overflow: hidden;
+            line-height: 20px;
+            span:first-of-type{
+              float: left;
+              font-size: 20px;
+              color: #f1c924;
+              font-family: simsun;
+            }
+            span:nth-of-type(2){
+              float: right;
+              font-size: 12px;
+            }
+          }
+          >p:nth-of-type(3){
+              color: black;
+          }
+          >a{
+            color: #9c9c9c;
+          }
+        }
+      }
+    }
+    >.more{
+      margin-top: 16px;
+      padding: 0 8px 16px;
+      width: 100%;
+      height: 49px;
+    >a{
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height:33px;
+      border-radius: 5px;
+      border: 1px solid #8f8f8f;
+      background-color: #ebebeb;
+    }
+    }
+  }
+  #footer{
+    >.top{
+      width: 100%;
+      height: 34px;
+      border-top: 1px solid #b0b0b0;
+      border-bottom: 1px solid #b0b0b0;
+      margin: 0;
+      justify-content: space-around;
+      >li{
+        height: 100%;
+        border-right: 1px solid #ccc;
+        text-align: center;
+        line-height: 34px;
+        background-color: #e4e3e3;
+        >a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          >img{
+            width: 15px;
+            height: 15px;
+            margin-top: -4px;
+          }
+        }
+      }
+      >li:last-of-type{
+        border-right: 0;
+      }
+    }
+    >.bottom{
+      text-align: center;
+      background-color: #e4e3e3;
+      padding-top: 10px;
+      font-size: 12px;
+      p:first-of-type{
+        margin-bottom: 0;
+        >a:first-of-type{
+          color: red;
+        }
+      }
+      p:last-of-type{
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

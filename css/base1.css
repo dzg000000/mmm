@@ -1,0 +1,26 @@
+div,
+ul,
+p,
+li,
+input,
+form {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-family: "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+body a {
+  text-decoration: none;
+  color: #333;
+}
+body a:hover {
+  text-decoration: none;
+  color: #333;
+}

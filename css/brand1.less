@@ -1,0 +1,235 @@
+
+body{
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  #header{
+    width: 100%;
+    height: 50px;
+    background-color: #ff841d;
+    .mm_logo{
+      height: 25px;
+      width: 186px;
+      float: left;
+      margin-left: 16px;
+      margin-top: 12px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+    .mm_download{
+      height: 48px;
+      width: 48px;
+      float: right;
+      text-align: center;
+      img{
+        margin-top: 10px;
+        width: 34px;
+        height: 34px;
+        text-align: center;
+      }
+    }
+  }
+  #search{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #cccccc;
+    overflow: hidden;
+    form{
+      width: 100%;
+      height: 30px;
+      margin-top: 10px;
+      position: relative;
+      padding-left: 16px;
+      font-size: 18px;
+      .txt{
+        width: 90%;
+        height: 30px;
+        //margin-left: 10px;
+        //margin-right: 60px;
+        border-radius: 15px;
+        padding-left: 5%;
+        outline: none;
+        border: 0;
+        background-color: #f1f1f1;
+
+
+      }
+      .btn{
+        width: 60px;
+        height: 30px;
+        line-height: 15px;
+        border-radius: 15px;
+        background-color: #ff841d;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        outline: none;
+        border: none;
+        font-size: 16px;
+        color: #fff;
+
+      }
+    }
+  }
+  #container{
+    width: 100%;
+    >.top{
+      width: 100%;
+      height: 40px;
+      background-color: #f6f5f5;
+      >ul{
+        list-style: none;
+        float: left;
+        height: 100%;
+        margin: 0;
+        padding-left: 10px;
+        >li{
+          float: left;
+          height: 40px;
+
+          >a{
+            height: 40px;
+            display: block;
+            line-height: 40px;
+
+          }
+        }
+      }
+      input{
+        float: right;
+        height: 30px;
+        margin-top: 5px;
+        margin-right: 5px;
+        box-shadow:5px 2px 6px #000;
+        outline: none;
+      }
+    }
+    >.center{
+      width: 100%;
+      >ul{
+        width: 100%;
+        >li{
+          width: 100%;
+          height: 140px;
+
+          a{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            padding: 10px 8px;
+            >.left{
+              float: left;
+              height: 100%;
+              margin-right: 10px;
+              img{
+                display: block;
+                width: 120px;
+                height: 120px;
+              }
+            }
+            >.right{
+              flex-grow: 1;
+              >.title{
+                font-size: 15px;
+                color: #333;
+                height: 56px;
+                line-height: 28px;
+                overflow: hidden;
+              }
+              >.price{
+                color: red;
+                font-size: 18px;
+                margin-top: 8px;
+              }
+              .other{
+                color: #c3c3c3;
+                font-size: 12px;
+                margin-top: 8px;
+                span:nth-of-type(2){
+                  float: right;
+                }
+              }
+
+            }
+          }
+        }
+      }
+
+    }
+    >.bottom{
+      width: 100%;
+      height: 50px;
+      padding: 5px;
+      display: flex;
+      justify-content: space-around;
+      background-color: #e4e3e3;
+      >div{
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        background-color: #cccccc;
+        border-radius: 10px;
+      }
+      >select{
+        width: 100px;
+        height: 40px;
+        background-color: #ffffff;
+        border-radius: 0px;
+        >option{
+          width: 100px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  #footer{
+    >.top{
+      width: 100%;
+      height: 34px;
+      border-top: 1px solid #b0b0b0;
+      border-bottom: 1px solid #b0b0b0;
+      margin: 0;
+      justify-content: space-around;
+      >li{
+        height: 100%;
+        border-right: 1px solid #ccc;
+        text-align: center;
+        line-height: 34px;
+        background-color: #e4e3e3;
+        >a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          >img{
+            width: 15px;
+            height: 15px;
+            margin-top: -4px;
+          }
+        }
+      }
+      >li:last-of-type{
+        border-right: 0;
+      }
+    }
+    >.bottom{
+      text-align: center;
+      background-color: #e4e3e3;
+      padding-top: 10px;
+      font-size: 12px;
+      p:first-of-type{
+        margin-bottom: 0;
+        >a:first-of-type{
+          color: red;
+        }
+      }
+      p:last-of-type{
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

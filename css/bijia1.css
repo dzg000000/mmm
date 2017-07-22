@@ -1,0 +1,290 @@
+body {
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+body #header {
+  width: 100%;
+  height: 50px;
+  background-color: #ff841d;
+}
+body #header .mm_logo {
+  height: 25px;
+  width: 186px;
+  float: left;
+  margin-left: 16px;
+  margin-top: 12px;
+}
+body #header .mm_logo img {
+  width: 100%;
+  height: 100%;
+}
+body #header .mm_download {
+  height: 48px;
+  width: 48px;
+  float: right;
+  text-align: center;
+}
+body #header .mm_download img {
+  margin-top: 10px;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+}
+body #search {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #cccccc;
+  overflow: hidden;
+}
+body #search form {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  position: relative;
+  padding-left: 16px;
+  font-size: 18px;
+}
+body #search form .txt {
+  width: 90%;
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 5%;
+  outline: none;
+  border: 0;
+  background-color: #f1f1f1;
+}
+body #search form .btn {
+  width: 60px;
+  height: 30px;
+  line-height: 15px;
+  border-radius: 15px;
+  background-color: #ff841d;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+}
+body #productInfo {
+  width: 100%;
+  background-color: #ebebeb;
+}
+body #productInfo > .top {
+  width: 100%;
+  height: 40px;
+  background-color: #f6f5f5;
+}
+body #productInfo > .top > ul {
+  list-style: none;
+  float: left;
+  height: 100%;
+  margin: 0;
+  padding-left: 10px;
+}
+body #productInfo > .top > ul > li {
+  float: left;
+  height: 40px;
+}
+body #productInfo > .top > ul > li > a {
+  height: 40px;
+  display: block;
+  line-height: 40px;
+}
+body #productInfo > .top input {
+  float: right;
+  height: 30px;
+  margin-top: 5px;
+  margin-right: 5px;
+  box-shadow: 5px 2px 6px #000;
+  outline: none;
+}
+body #productInfo > .productNew {
+  width: 100%;
+  height: 265px;
+  padding: 10px 10px 0 10px;
+  background-color: #ffffff;
+}
+body #productInfo > .productNew > .picBox {
+  width: 100%;
+  height: 180px;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+}
+body #productInfo > .productNew > .picBox > img {
+  width: 160px;
+  height: 160px;
+}
+body #productInfo > .productNew > .picBox > span {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 10px;
+  background-color: green;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+}
+body #productInfo > .productNew > p {
+  color: black;
+}
+body #productInfo > .productNew > .other {
+  width: 100%;
+  margin-top: 10px;
+  color: #9b9b9b;
+}
+body #productInfo > .productNew > .other > span:first-of-type {
+  float: left;
+  width: 50%;
+}
+body #productInfo > .productNew > .other > span:nth-of-type(2) {
+  float: left;
+  width: 50%;
+}
+body #productInfo > .productNew > .other > span:nth-of-type(2) > i {
+  font-style: normal;
+  color: black;
+}
+body #productInfo > .row {
+  width: 100%;
+  height: 34px;
+  margin: 0;
+  margin-top: 20px;
+  border-top: 1px solid #d12a2e;
+  border-bottom: 1px solid #d12a2e;
+  background-color: #ffd01f;
+}
+body #productInfo > .row > .col-xs-4 {
+  height: 34px;
+  line-height: 32px;
+  text-align: center;
+  border-right: 1px solid #d12a2e;
+}
+body #productInfo > .row > .col-xs-4 > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body #productInfo > .row > .col-xs-4:last-of-type {
+  border-right: 0;
+}
+body #productInfo > .talk {
+  width: 100%;
+}
+body #productInfo > .talk > .top {
+  border-top: 4px solid #7a7a7a;
+  height: 35px;
+  width: 100%;
+  background-color: #dbdbdb;
+  text-align: center;
+  line-height: 35px;
+  margin-top: 5px;
+}
+body #productInfo > .talk > .content {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+body #productInfo > .talk > .content > .talk_list {
+  width: 100%;
+  padding: 10px 10px 0 10px;
+  color: #9c9c9c;
+  background-color: #fff;
+  border-bottom: 1px solid #bcbcbc;
+}
+body #productInfo > .talk > .content > .talk_list > p:first-of-type {
+  overflow: hidden;
+}
+body #productInfo > .talk > .content > .talk_list > p:first-of-type span:first-of-type {
+  float: left;
+  font-size: 14px;
+}
+body #productInfo > .talk > .content > .talk_list > p:first-of-type span:nth-of-type(2) {
+  float: right;
+  font-size: 12px;
+}
+body #productInfo > .talk > .content > .talk_list > p:nth-of-type(2) {
+  overflow: hidden;
+  line-height: 20px;
+}
+body #productInfo > .talk > .content > .talk_list > p:nth-of-type(2) span:first-of-type {
+  float: left;
+  font-size: 20px;
+  color: #f1c924;
+  font-family: simsun;
+}
+body #productInfo > .talk > .content > .talk_list > p:nth-of-type(2) span:nth-of-type(2) {
+  float: right;
+  font-size: 12px;
+}
+body #productInfo > .talk > .content > .talk_list > p:nth-of-type(3) {
+  color: black;
+}
+body #productInfo > .talk > .content > .talk_list > a {
+  color: #9c9c9c;
+}
+body #productInfo > .more {
+  margin-top: 16px;
+  padding: 0 8px 16px;
+  width: 100%;
+  height: 49px;
+}
+body #productInfo > .more > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 33px;
+  border-radius: 5px;
+  border: 1px solid #8f8f8f;
+  background-color: #ebebeb;
+}
+body #footer > .top {
+  width: 100%;
+  height: 34px;
+  border-top: 1px solid #b0b0b0;
+  border-bottom: 1px solid #b0b0b0;
+  margin: 0;
+  justify-content: space-around;
+}
+body #footer > .top > li {
+  height: 100%;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  line-height: 34px;
+  background-color: #e4e3e3;
+}
+body #footer > .top > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body #footer > .top > li > a > img {
+  width: 15px;
+  height: 15px;
+  margin-top: -4px;
+}
+body #footer > .top > li:last-of-type {
+  border-right: 0;
+}
+body #footer > .bottom {
+  text-align: center;
+  background-color: #e4e3e3;
+  padding-top: 10px;
+  font-size: 12px;
+}
+body #footer > .bottom p:first-of-type {
+  margin-bottom: 0;
+}
+body #footer > .bottom p:first-of-type > a:first-of-type {
+  color: red;
+}
+body #footer > .bottom p:last-of-type {
+  padding-bottom: 10px;
+}
